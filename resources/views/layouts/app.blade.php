@@ -130,7 +130,7 @@ https://templatemo.com/tm-551-stand-blog
                       <h2>Categories</h2>
                         </div>
                     
-                        @include('layouts.categori')
+                        @include('layouts.menu.categori')
                   
                     </div>
                 </div>

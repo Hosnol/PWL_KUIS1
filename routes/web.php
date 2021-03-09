@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,3 +33,14 @@ Route::get('/test-koneksi-database', function() {
 		echo 'Belum terkoneksi database, error: ' . $e->getMessage();
 	}
 });
+
+//Pemanggilan controller
+Route::get('/', [HomeController::class, 'index']);
+Route::get('/about-us', [HomeController::class, 'about']);
+Route::get('/blog', [HomeController::class, 'blog']);
+Route::get('/post-details', [HomeController::class, 'post']);
+Route::get('/contact-us', [HomeController::class, 'contact']);
+Route::get('/daftar-barang', [HomeController::class, 'barang']);
+Route::get('/daftar-pelanggan', [HomeController::class, 'pelanggan']);
+Route::get('/daftar-pegawai', [HomeController::class, 'pegawai']);
+Route::get('/daftar-supplier', [HomeController::class, 'supplier']);
