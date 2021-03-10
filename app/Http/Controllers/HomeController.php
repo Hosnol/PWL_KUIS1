@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Barang;
+use App\Models\Supplier;
 
 class HomeController extends Controller
 {
@@ -40,6 +41,6 @@ class HomeController extends Controller
     }
 
     public function supplier(){
-        return view('supplier');
+        return view('supplier',['spr'=> Supplier::tampil()]);
     }
 }
