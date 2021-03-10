@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Barang;
 
 class HomeController extends Controller
 {
@@ -27,7 +28,7 @@ class HomeController extends Controller
     }
 
     public function barang(){
-        return view('barang');
+        return view('barang',['brg'=> Barang::tampil()]);
     }
 
     public function pelanggan(){
