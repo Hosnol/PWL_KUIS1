@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Supplier;
 use App\Models\Pelanggan;
+use App\Models\Pegawai;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -20,6 +21,8 @@ class DatabaseSeeder extends Seeder
         //$this->call(SupplierSeeder::class);
         //Supplier::factory(20)->create();
         //$this->call(PelangganSeeder::class);
-        Pelanggan::factory(20)->create();
+        //Pelanggan::factory(20)->create();
+        //$this->call(PegawaiSeeder::class);
+        Pegawai::factory(20)->create();
     }
 }

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Barang;
 use App\Models\Supplier;
 use App\Models\Pelanggan;
+use App\Models\Pegawai;
 
 class HomeController extends Controller
 {
@@ -38,7 +39,7 @@ class HomeController extends Controller
     }
 
     public function pegawai(){
-        return view('pegawai');
+        return view('pegawai',['pgi'=> Pegawai::tampil()]);
     }
 
     public function supplier(){
