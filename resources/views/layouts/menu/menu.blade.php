@@ -24,7 +24,7 @@
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="{{ url('/daftar-pelanggan') }}">Pelangga</a>
+        <a class="nav-link" href="{{ url('/daftar-pelanggan') }}">Pelanggan</a>
     </li>
 
     <li class="nav-item">

@@ -4,14 +4,21 @@
 <div class="card-body">
     <table class="table table-bordered">
         <tr>
-            <th></th>
+            <th> Nama pelanggan </th>
+            <th> Jenis kelamin </th>
+            <th> No telepon </th>
+            <th> Alamat </th>
         </tr>
 
-        @foreach()
+        @foreach($plgn as $item)
             <tr>
-                <td></td>
+                <td> {{$item->nama_pelanggan}} </td>
+                <td> {{$item->jk}} </td>
+                <td> {{$item->no_telepon}} </td>
+                <td> {{$item->alamat}} </td>
             </tr>
         @endforeach
     </table>
 </div>
+{{$plgn->links()}}
 @endsection

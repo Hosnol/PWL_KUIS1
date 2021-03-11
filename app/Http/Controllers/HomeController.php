@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Barang;
 use App\Models\Supplier;
+use App\Models\Pelanggan;
 
 class HomeController extends Controller
 {
@@ -33,7 +34,7 @@ class HomeController extends Controller
     }
 
     public function pelanggan(){
-        return view('pelanggan');
+        return view('pelanggan',['plgn'=> Pelanggan::tampil()]);
     }
 
     public function pegawai(){
